@@ -57,9 +57,9 @@ def draw?(board)
 end
 
 def over?(board)
-  board.each.do |x|
-  if x == ' '
-    return false
-  end
+  board.each do |x|
+     if x == ' '
+       return false
+     end
 end
 end
