@@ -61,6 +61,6 @@ def over?(board)
      if x == ' '
        return false
      end
-end
-true
+  end
+  true
 end
