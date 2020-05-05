@@ -31,4 +31,10 @@ def won?(board)
     elseif board[win_index(0)] == "O" && board[win_index(1)] == "O" && board[win_index(2)] == "O"
      return win_combination
    elseif board.all? {|i| i =="i"}
+    return false
+  else 
+    next
+  end 
+end
+false
   end
