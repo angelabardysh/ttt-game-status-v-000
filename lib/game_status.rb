@@ -41,6 +41,7 @@ end
 
 def full?(board)
   board.each do |x|
+    if x = " "
     return false
   end
 end
