@@ -62,5 +62,4 @@ def over?(board)
        return true
      end
   end
-  false
 end
