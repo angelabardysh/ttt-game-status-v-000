@@ -32,9 +32,9 @@ def won?(board)
      return win_combination
    elseif board.all? {|i| i =="i"}
     return false
-  else 
+  else
     next
-  end 
+  end
 end
 false
   end
