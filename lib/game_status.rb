@@ -25,4 +25,8 @@ def won?(board)
     win_index6 = win_combination[6]
     win_index7 = win_combination[7]
     win_index8 = win_combination[8]
+
+    if board[win_index(0)] == "X" && board[win_index(1)] == "X" && board[win_index(2)] == "X"
+      return win_combination
+    elseif board[win_index(0)] == "O" && board[win_index(1)] == "O" && board[win_index(2)] == "O"
   end
