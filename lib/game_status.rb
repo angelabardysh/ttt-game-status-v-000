@@ -57,9 +57,5 @@ def draw?(board)
 end
 
 def over?(board)
-  board.each do |x|
-     if x == ' '
-       return true
-     end
-  end
+  won?(board) || full?(board)
 end
