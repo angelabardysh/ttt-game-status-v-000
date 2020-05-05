@@ -59,9 +59,9 @@ end
 def over?(board)
   board.each do |x|
      if x == ' '
-       return false
+       return true
      else
-       true
+       false
      end
   end
 end
