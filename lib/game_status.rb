@@ -15,26 +15,26 @@ WIN_COMBINATIONS = [ [0, 1, 2],
 ]
 
 def won?(board)
-  WIN_COMBINATIONS.each do |win_combination|
-    win_index0 = win_combination[0]
-    win_index1 = win_combination[1]
-    win_index2 = win_combination[2]
-    win_index3 = win_combination[3]
-    win_index4 = win_combination[4]
-    win_index5 = win_combination[5]
-    win_index6 = win_combination[6]
-    win_index7 = win_combination[7]
-    win_index8 = win_combination[8]
+   WIN_COMBINATIONS.each do |win_combination|
+    win_index_0 = win_combination[0]
+    win_index_1 = win_combination[1]
+    win_index_2 = win_combination[2]
+    win_index_3 = win_combination[3]
+    win_index_4 = win_combination[4]
+    win_index_5 = win_combination[5]
+    win_index_6 = win_combination[6]
+    win_index_7 = win_combination[7]
 
-    if board[win_index(0)] == "X" && board[win_index(1)] == "X" && board[win_index(2)] == "X"
+    if board[win_index_0] == "X" && board[win_index_1] == "X" && board[win_index_2] == "X"
       return win_combination
-    elseif board[win_index(0)] == "O" && board[win_index(1)] == "O" && board[win_index(2)] == "O"
-     return win_combination
-   elseif board.all? {|i| i =="i"}
-    return false
-  else
-    next
+    elsif board[win_index_0] == "O" && board[win_index_1] == "O" && board[win_index_2] == "O"
+      return win_combination
+        elsif board.all? { |i| i == " " }
+      return false
+
+        else
+      next
+    end
   end
+  false
 end
-false
-  end
