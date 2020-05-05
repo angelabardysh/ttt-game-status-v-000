@@ -60,8 +60,7 @@ def over?(board)
   board.each do |x|
      if x == ' '
        return true
-     else
-       false
      end
   end
+  false
 end
